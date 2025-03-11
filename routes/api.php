@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\Api\PaginaController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
@@ -7,22 +8,5 @@ use Illuminate\Support\Facades\Route;
 //     return $request->user();
 // })->middleware('auth:sanctum');
 
-Route::get('/pages', function() {
-    return 'Obteniendo lista de páginas';
-});
+Route::resource('pages', PaginaController::class)->only(['index', 'show', 'store', 'update', 'destroy']);
 
-Route::get('/pages/{id}', function() {
-    return 'Obteniendo una página';
-});
-
-Route::post('/pages', function() {
-    return 'Creando una nueva página';
-});
-
-Route::put('/pages/{id}', function() {
-    return 'Actualizando una página';
-});
-
-Route::delete('/pages/{id}', function() {
-    return 'Eliminando una página';
-});
