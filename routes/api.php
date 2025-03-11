@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\Api\PaginaController;
+use App\Http\Controllers\Api\ComponenteController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
@@ -10,3 +11,4 @@ use Illuminate\Support\Facades\Route;
 
 Route::resource('pages', PaginaController::class)->only(['index', 'show', 'store', 'update', 'destroy']);
 
+Route::resource('componentes', ComponenteController::class)->only(['index', 'show', 'store', 'update', 'destroy']);
