@@ -14,8 +14,9 @@ return new class extends Migration
         Schema::create('componentes', function (Blueprint $table) {
             $table->id();
             $table->string('nombre', 100);
-            $table->string('tipo', 50);
+            $table->string('tipo'); // enum TipoComponente
             $table->text('descripcion')->nullable();
+            $table->json('configuracion_json')->nullable();
             $table->timestamps();
         });
     }
