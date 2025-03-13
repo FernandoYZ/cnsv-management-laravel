@@ -13,8 +13,16 @@ return new class extends Migration
     {
         Schema::create('secciones', function (Blueprint $table) {
             $table->id();
-            $table->foreignId('pagina_id')->constrained()->cascadeOnDelete()->index();
-            $table->foreignId('componente_id')->constrained()->cascadeOnDelete()->index();
+            $table->foreignId('pagina_id')
+                ->constrained('paginas')
+                ->cascadeOnDelete()
+                ->index()
+                ->name('fk_secciones_pagina_id');
+            $table->foreignId('componente_id')
+                ->constrained('componentes')
+                ->cascadeOnDelete()
+                ->index()
+                ->name('fk_secciones_componente_id');
             $table->string('identificador', 100);
             $table->string('titulo', 255)->nullable();
             $table->boolean('estado')->default(true);
