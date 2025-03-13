@@ -13,7 +13,7 @@ return new class extends Migration
     {
         Schema::create('seccion_contenido', function (Blueprint $table) {
             $table->id();
-            $table->foreignId('seccion_id')->constrained()->cascadeOnDelete()->index();
+            $table->foreignId('seccion_id')->constrained('secciones')->cascadeOnDelete()->index();
             $table->string('clave', 100)->index();
             $table->text('valor')->nullable();
             $table->string('tipo')->default('texto'); // enum TipoSeccionContenido
