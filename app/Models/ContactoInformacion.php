@@ -3,10 +3,13 @@
 namespace App\Models;
 
 use App\Enum\TipoContactoInformacion;
+use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
 class ContactoInformacion extends Model
 {
+    use HasFactory;
+    
     protected $table = 'contacto_informacion';
     protected $fillable = [
         'tipo',

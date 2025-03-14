@@ -2,11 +2,14 @@
 
 namespace App\Models;
 
+use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
 
 class LogroEvento extends Model
 {
+    use HasFactory;
+    
     protected $table = 'logros_eventos';
     protected $fillable = [
         'evento_id',

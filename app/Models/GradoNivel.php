@@ -3,11 +3,15 @@
 namespace App\Models;
 
 use App\Enum\Grado;
+use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
+use Illuminate\Testing\Fluent\Concerns\Has;
 
 class GradoNivel extends Model
 {
+    use HasFactory;
+    
     protected $table = 'grados_nivel';
     public $timestamps = false;
 

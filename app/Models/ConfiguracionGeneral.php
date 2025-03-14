@@ -4,10 +4,13 @@ namespace App\Models;
 
 use App\Enum\TipoConfiguracion;
 use Illuminate\Database\Eloquent\Casts\Attribute;
+use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
 class ConfiguracionGeneral extends Model
 {
+    use HasFactory;
+
     protected $table = 'configuracion_general';
     protected $fillable = [
         'clave',

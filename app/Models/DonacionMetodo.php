@@ -3,11 +3,14 @@
 namespace App\Models;
 
 use App\Enum\TipoDonacion;
+use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
 
 class DonacionMetodo extends Model
 {
+    use HasFactory;
+    
     protected $table = 'donacion_metodos';
     protected $fillable = [
         'tipo',

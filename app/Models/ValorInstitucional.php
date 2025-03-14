@@ -3,11 +3,14 @@
 namespace App\Models;
 
 use App\Enum\TipoValores;
+use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\MorphMany;
 
 class ValorInstitucional extends Model
 {
+    use HasFactory;
+    
     protected $table = 'valores_institucionales';
     protected $fillable = [
         'titulo',

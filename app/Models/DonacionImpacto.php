@@ -2,10 +2,13 @@
 
 namespace App\Models;
 
+use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
 class DonacionImpacto extends Model
 {
+    use HasFactory;
+    
     protected $table = 'donacion_impacto';
     protected $fillable = [
         'titulo',
