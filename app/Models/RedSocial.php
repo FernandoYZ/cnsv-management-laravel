@@ -2,10 +2,9 @@
 
 namespace App\Models;
 
+use App\Enum\RedesSociales;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\MorphMany;
-use RedesSociales;
-use TipoValores;
 
 class RedSocial extends Model
 {

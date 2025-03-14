@@ -2,7 +2,7 @@
 
 namespace App\Models;
 
-use Grado;
+use App\Enum\Grado;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
 

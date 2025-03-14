@@ -2,10 +2,10 @@
 
 namespace App\Models;
 
+use App\Enum\TipoNavegacion;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Illuminate\Database\Eloquent\Relations\HasMany;
-use TipoNavegacion;
 
 class ItemNavegacion extends Model
 {

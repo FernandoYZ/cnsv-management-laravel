@@ -2,9 +2,9 @@
 
 namespace App\Models;
 
+use App\Enum\TipoMultimedia;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\HasMany;
-use TipoMultimedia;
 
 class ArchivoMultimedia extends Model
 {

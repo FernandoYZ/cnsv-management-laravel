@@ -2,8 +2,8 @@
 
 namespace App\Models;
 
+use App\Enum\TipoContactoInformacion;
 use Illuminate\Database\Eloquent\Model;
-use TipoContactoInformacion;
 
 class ContactoInformacion extends Model
 {

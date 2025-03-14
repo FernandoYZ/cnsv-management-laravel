@@ -2,9 +2,9 @@
 
 namespace App\Models;
 
+use App\Enum\TipoValores;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\MorphMany;
-use TipoValores;
 
 class ValorInstitucional extends Model
 {

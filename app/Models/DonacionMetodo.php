@@ -2,9 +2,9 @@
 
 namespace App\Models;
 
+use App\Enum\TipoDonacion;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
-use TipoDonacion;
 
 class DonacionMetodo extends Model
 {

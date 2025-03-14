@@ -2,9 +2,9 @@
 
 namespace App\Models;
 
+use App\Enum\TipoComponente;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\HasMany;
-use TipoComponente;
 
 class Componente extends Model
 {
